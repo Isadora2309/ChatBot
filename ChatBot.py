@@ -29,7 +29,7 @@ def pergunta_1(update, context):
     context.user_data['pergunta_1'] = text
 
     if text == '1':
-        resposta =  ('O cartão de crédito Carrefour é aceito em todos os locais credenciados Visa e Mastercard, dentrou ou fora do país. Tendo como benefícios exclusivos: \n'+
+        resposta =  ('O cartão de crédito Carrefour é aceito em todos os locais credenciados Visa e Mastercard, dentrou ou fora do país. Tendo como benefícios exclusivos: \n\n'+
                     'Produtos com descontos exclusivos nas Lojas Carrefour e no site; \n Produtos sinalizados com o selo de primeira parcela paga; \n'+
                     'Produtos sinalizados nas Lojas Carrefour ou no site podem ser parcelados em até 24x sem juros;\n'+
                     'Parcelamento em até 10x sem juros nas Drogarias Carrefour; \n Prazo maior para pagar o combustível nos postos Carrefour;\n\n'+
@@ -39,22 +39,22 @@ def pergunta_1(update, context):
                     'Para saber onde baixar o aplicativo Carrefour digite 4 \n')
         reply_keyboard = [['1', '2', '3', '4']]
     elif text == '2':
-        resposta = ('Os seguros do Cartão Carrefour são os seguintes: \n'+
+        resposta = ('Os seguros do Cartão Carrefour são os seguintes: \n\n'+
                     '1. Proteção Hospitalar; \n 2. Sorte Grande; \n 3. Proteção Dental; \n 4. Seguro Premiado; \n'+ 
-                    '5. Lar Seguro; \n 6. Parcele Fácil; \n 7. Crédito Pessoal; \n 8. Fatura Premiada; \n'+
+                    '5. Lar Seguro; \n 6. Parcele Fácil; \n 7. Crédito Pessoal; \n 8. Fatura Premiada; \n\n'+
                     'Sobre qual assunto sua dúvida advém? Digite o número para facilitarmos! \n')
         reply_keyboard = [['1', '2', '3', '4', '5', '6', '7', '8']]
     elif text == '3':
-        resposta = ('Os serviços do Cartão Carrefour são: \n 1. Parcele Fácil; \n 2. Crédito Pessoal; \n 3. PagContas; \n 4. Saque Rápido; \n'+
-        '5. SMS Controle Total; \n 6. Parcela Pronta; \n'+
+        resposta = ('Os serviços do Cartão Carrefour são: \n\n 1. Parcele Fácil; \n 2. Crédito Pessoal; \n 3. PagContas; \n 4. Saque Rápido; \n'+
+        '5. SMS Controle Total; \n 6. Parcela Pronta; \n\n'+
         'Sobre qual assunto sua dúvida advém? Digite o número para facilitarmos! \n')
         reply_keyboard = [['1', '2', '3', '4', '5', '6']]
     elif text == '4':
-        resposta = ('Para participar é fácil! A cada R$ 10,00 em compras com o cartão carrefour, você ganha um número da sorte! \n'
+        resposta = ('Para participar é fácil! A cada R$ 10,00 em compras com o cartão carrefour, você ganha um número da sorte! \n\n'
                     'Aumente suas chances comprando no Carrefour e ganhando números da sorte em dobro OU contratando um seguro no cartão'
                     'e assim ganhando mais um número da sorte!\n\n''São sorteados 8 prêmios de 50 mil reais em barras de ouro pela'
                     'Loteria Federal ao final da Promoção, e 200 valos compras de R$ 250,00 reais (que você pode ganhar na raspadinha'
-                    'virtual)!\n\n''Como participar da raspadinha virtual? Basta seguir os passos abaixo:\n 1. Acesse "vernúmeros da sorte"'
+                    'virtual)!\n\n''Como participar da raspadinha virtual? Basta seguir os passos abaixo:\n\n 1. Acesse "vernúmeros da sorte"'
                     'com seu CPF  e data de nascimento. \n 2. Clique em "raspar agora" e veja se tem jogadas disponíveis. \n 3. Aí é só'
                     'raspar e torcer!\n\n Para saber mais e tirar suas dúvidas, acesse o site do Banco Carrefour, através deste link:'
                     'https://www.carrefoursolucoes.com.br/promocao')
@@ -73,16 +73,16 @@ def pergunta_2(update, context):
 
     if escolha == '1':
         if text == '1':
-            resposta = 'As vantagens do Cartão Carrefour são:\n Isenção da parcela da anuidade usando pelo menos uma vez por mês, em qualquer Carrefour;\n Controle de transações por SMS, mediante contratação de serviço;\n Até 14 opções de data de vencimento;\n Prazo maior para pagar, utilizando a melhor data de compra;\n Até 04 cartões adicionais gratuitos;\n Saque rápido na Rede 24Horas e Rede Cirrus/Plus; \n Pagamento da fatura em qualquer Banco; \n Limite liberado na hora, ao pagar a fatura nos caixas da Loja Carrefour;\n Contrate o Crédito Pessoal em nossa Central de Relacionamento e tenha dinheiro na sua conta em até 72 horas, consulto condições'
+            resposta = 'As vantagens do Cartão Carrefour são:\n\n Isenção da parcela da anuidade usando pelo menos uma vez por mês, em qualquer Carrefour;\n Controle de transações por SMS, mediante contratação de serviço;\n Até 14 opções de data de vencimento;\n Prazo maior para pagar, utilizando a melhor data de compra;\n Até 04 cartões adicionais gratuitos;\n Saque rápido na Rede 24Horas e Rede Cirrus/Plus; \n Pagamento da fatura em qualquer Banco; \n Limite liberado na hora, ao pagar a fatura nos caixas da Loja Carrefour;\n Contrate o Crédito Pessoal em nossa Central de Relacionamento e tenha dinheiro na sua conta em até 72 horas, consulto condições'
         elif text == '2':
             resposta = '1.Solicite: peça já o seu cartão indo até a Loja Carrefour mais próxima, ou através do site Carrefour Soluções que você pode acessar clicando no link a seguir: https://www.carrefoursolucoes.com.br/ \n 2. Receba seu cartão em casa ou saia com ele direto da loja. Consulte as lojas com esta disponibilidade \n 3. Desbloqueie através dos canais Carrefour disponibilizados \n 4. Aproveite usando o cartão e assim tendo acesso a benefícios e serviços exclusivos para você! \n'
         elif text == '3':
-            resposta = 'Você pode desbloquear seu cartão através de: \n 1. Terminais de Serviço (TAS): presentes em todas as lojas Carrefour; \n 2. Central de Atendimento: para regiões metropolitanas ligue 4004 6200, e para demais regiões, ligue 0800 709 6200 \n 3. App Cartão Carrefour: baixe o aplicativo e aproveite as facilidades!\n '
+            resposta = 'Você pode desbloquear seu cartão através de: \n\n 1. Terminais de Serviço (TAS): presentes em todas as lojas Carrefour; \n 2. Central de Atendimento: para regiões metropolitanas ligue 4004 6200, e para demais regiões, ligue 0800 709 6200 \n 3. App Cartão Carrefour: baixe o aplicativo e aproveite as facilidades!\n '
         elif text == '4':
             resposta = 'Através do aplicativo você pode consultar suas compras, limites, os melhores dias para realizar suas compras e acessar sua fatura. Disponível na Google Play (https://play.google.com/store/apps/details?id=br.com.carrefour.cartaocarrefour) e App Store (https://apps.apple.com/br/app/cart%C3%A3o-carrefour/id1156553924) \n'
     elif escolha == '2':
         if text == '1':
-            resposta = 'Você não precisa esperar os problemas de saúde acontecerem para se proteger. Ao adquirir o Proteção Hospitalar pelo seu Cartão Carrefour, você garante dinheiro no bolso enquanto estiver hospitalizado.\n Em caso de internação (por acidente ou doença) você recebe diárias de até R$ 300 por internação hospitalar. Independente de você ter ou não plano de saúde, o dinheiro da indenização é pago diretamente a você. \n O Proteção Hospitalar inclui ainda uma Assistência Funeral, com prestação de serviços de até R$ 3.300. Por mais R$ 1,00, estenda a cobertura para toda sua família. \n Caso queira saber mais sobre os planos disponíveis e seu valor, acesse o site através deste link: https://www.carrefoursolucoes.com.br/web/guest/seguros/hospitalar'
+            resposta = 'Você não precisa esperar os problemas de saúde acontecerem para se proteger. Ao adquirir o Proteção Hospitalar pelo seu Cartão Carrefour, você garante dinheiro no bolso enquanto estiver hospitalizado.\n\n Em caso de internação (por acidente ou doença) você recebe diárias de até R$ 300 por internação hospitalar. Independente de você ter ou não plano de saúde, o dinheiro da indenização é pago diretamente a você. \n\n O Proteção Hospitalar inclui ainda uma Assistência Funeral, com prestação de serviços de até R$ 3.300. Por mais R$ 1,00, estenda a cobertura para toda sua família. \n\n Caso queira saber mais sobre os planos disponíveis e seu valor, acesse o site através deste link: https://www.carrefoursolucoes.com.br/web/guest/seguros/hospitalar'
         elif text == '2':
             resposta = 'Não é todo mundo que gosta de pensar nisso, mas planejamento pode ser a segurança da sua família em momentos difíceis. O nosso auxílio funeral traz essa tranquilidade com a garantia da cobertura de despesas em caso de morte acidental do titular. Para saber mais acesse este link que te levará direto à página sobre este tópico: https://www.carrefoursolucoes.com.br/web/guest/seguros/sorte-grande'
         elif text == '3':
@@ -99,7 +99,7 @@ def pergunta_2(update, context):
             resposta = 'O seguro Fatura Premiada é a tranquilidade que faltava pro seu dia. Em casos de desemprego involuntário ou de incapacidade física total e temporária, o seguro garante o pagamento do saldo devedor do seu Cartão Carrefour até o limite de R$ 5.000,00. Além disso, você ainda concorre a R$ 10.000,00 líquido, em sorteios mensais. Para saber mais, acesse: https://www.carrefoursolucoes.com.br/web/guest/fatura-premiada'
     elif escolha == '3':
         if text == '1':
-            resposta = 'Ao parcelar a sua fatura, você sabe exatamente quanto vai pagar no próximo mês e por quanto tempo terá que pagar. Assim, fica mais fácil deixar suas contas em dia. \n\n Para parcelamento de fatura e terminal de autoatendimento, siga o seguinte procedimento:\n 1. Escolha uma das 8 opções de parcelamento disponíveis; \n 2. Pague o valor exato da entrada em um banco, lotérica ou em uma de nossas lojas até a data de vencimento; \n 3. Pronto! Parcelamento contratado! \n\n Agora se for através de site ou central de atendimento, siga estas instruções: \n 1. Simule a opção de parcelamento ideal para você. Caso as opções predefinidas não atendam a sua necessidade, você pode simular até chegar à melhor opção. \n 2. Confirme a contratação do parcelamento \n 3. Se optar pelo plano com entrada, pague exatamente o valor escolhido em um banco, lotérica ou em nossas lojas até a data de vencimento. \n 4. Pronto! Parcelamento contratado! \n\n Para mais informações, acesse: https://www.carrefoursolucoes.com.br/web/guest/servicos/parcele'
+            resposta = 'Ao parcelar a sua fatura, você sabe exatamente quanto vai pagar no próximo mês e por quanto tempo terá que pagar. Assim, fica mais fácil deixar suas contas em dia. \n\n Para parcelamento de fatura e terminal de autoatendimento, siga o seguinte procedimento:\n 1. Escolha uma das 8 opções de parcelamento disponíveis; \n 2. Pague o valor exato da entrada em um banco, lotérica ou em uma de nossas lojas até a data de vencimento; \n 3. Pronto! Parcelamento contratado! \n\n Agora se for através de site ou central de atendimento, siga estas instruções: \n\n 1. Simule a opção de parcelamento ideal para você. Caso as opções predefinidas não atendam a sua necessidade, você pode simular até chegar à melhor opção. \n 2. Confirme a contratação do parcelamento \n 3. Se optar pelo plano com entrada, pague exatamente o valor escolhido em um banco, lotérica ou em nossas lojas até a data de vencimento. \n 4. Pronto! Parcelamento contratado! \n\n Para mais informações, acesse: https://www.carrefoursolucoes.com.br/web/guest/servicos/parcele'
         elif text == '2':
             resposta = 'O crédito pessoal funciona como um empréstimo depositado direto em conta corrente ou poupança. \n\n Se você precisar de uma quantia adicional na hora de pagar as contas vencidas, acertar pendências ou turbinar o seu negócio, o Carrefour Soluções Financeiras facilita a sua vida com o Crédito Pessoal. \n\n Coloque os seus projetos emprática, sem burocracia, com uma das taxas mais competitivas do mercado. E você tem até 24 vezes para pagar o empréstimo. \n\n Entre em contato com a nossa Central de Relacionamento, conheça todas as nossas condições especiais e saiba se você é um cliente pré- aprovado para adquirir o serviço de Crédito Pessoal. \n\n Veja como é fácil ter crédito direto na sua conta:\n 1. Ligue para a central de relacionamento: O telefone é 4004-6200 para regiões metropolitanas ou 0800-709-6200 em demais localidades. O serviço funciona de segunda a sábado, exceto feriados, das 8h às 21h (horário de Brasília). \n 2. Contrate o valor total ou parte do valor: Com os benefícios do cartão de crédito Carrefour, você pode parcelar o valor contratado em até 24 vezes. \n 3. O dinheiro é depositado na sua conta: O crédito é depositado na sua conta corrente ou poupança em até 72 horas úteis. \n 4. Crédito pessoal contratado com sucesso! O valor da sua parcela é lançado todo mês na fatura do seu Cartão de crédito Carrefour.\n\n Para saber mais, acesse: https://www.carrefoursolucoes.com.br/credito-pessoal'
         elif text == '3':
@@ -122,7 +122,7 @@ def cancel(update, context):
     return ConversationHandler.END
 
 def main():
-    updater = Updater("cole_seu_token_aqui", use_context=True)
+    updater = Updater("TOKEN", use_context=True)
 
     dp = updater.dispatcher
 
